@@ -82,11 +82,10 @@ const Projects = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h1 className="font-playfair text-5xl font-bold text-bordeaux-900 mb-6">
-            Projects & Innovations
+            Projects
           </h1>
           <p className="text-xl text-bordeaux-700 font-cormorant leading-relaxed max-w-3xl mx-auto">
-            Explore my portfolio of digital projects, research tools, and creative endeavors 
-            that bridge technology and academia.
+            Here are some of the projects I've had fun with recently.
           </p>
         </div>
 
@@ -162,8 +161,7 @@ const Projects = () => {
               Interested in Collaboration?
             </h2>
             <p className="text-bordeaux-700 font-cormorant mb-6 leading-relaxed">
-              I'm always excited to explore new projects and collaborate with fellow researchers 
-              and innovators. Let's create something meaningful together.
+              Pessimists get to be right and optimists get to build the future. - I have the naive optimistic idea, that almost anything is doable, if your on the same page, feel free to reach out 🙌
             </p>
             <a 
               href="mailto:contact@example.com"
