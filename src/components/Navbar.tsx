@@ -11,7 +11,7 @@ export const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'Blog', href: '/blog' },
     { name: 'Projects', href: '/projects' },
-    { name: 'Academic Papers', href: '/papers' },
+    { name: 'Papers', href: '/papers' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -25,7 +25,7 @@ export const Navbar = () => {
             to="/" 
             className="font-playfair text-xl font-semibold text-bordeaux-900 hover:text-bordeaux-700 transition-colors"
           >
-            Academic Portfolio
+            Nathan Storm
           </Link>
 
           {/* Desktop Navigation */}

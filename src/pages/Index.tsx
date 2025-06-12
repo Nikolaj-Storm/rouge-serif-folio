@@ -22,11 +22,11 @@ const Index = () => {
         
         <div className={`text-center z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h1 className="font-playfair text-5xl md:text-7xl font-bold text-bordeaux-900 mb-6 leading-tight">
-            Dr. Academic Scholar
+            Nathan Storm
           </h1>
           <p className="font-cormorant text-xl md:text-2xl text-bordeaux-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Researcher, educator, and digital innovator exploring the intersection of 
-            technology and human understanding
+            Senior Software Engineer & Digital Innovation Expert exploring the intersection of 
+            technology and human experience
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link 
@@ -54,18 +54,18 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <div className="fade-in-section">
             <h2 className="font-playfair text-4xl font-semibold text-bordeaux-900 mb-8 text-center">
-              Welcome to My Academic Journey
+              Welcome to My Digital Journey
             </h2>
             <div className="prose prose-lg mx-auto text-bordeaux-800 font-cormorant leading-relaxed">
               <p className="text-xl mb-6">
-                I am a passionate researcher dedicated to advancing knowledge through rigorous scholarship 
-                and innovative methodologies. My work spans multiple disciplines, always seeking to bridge 
-                theoretical insights with practical applications.
+                I am a passionate software engineer dedicated to advancing technology through innovative 
+                solutions and rigorous engineering practices. My work spans web development, cloud architecture, 
+                and digital transformation, always seeking to bridge technical excellence with practical applications.
               </p>
               <p className="text-lg">
-                Through this digital space, I share my research findings, creative projects, and 
-                thoughts on the evolving landscape of academia and technology. Join me in exploring 
-                ideas that shape our understanding of the world.
+                Through this digital space, I share my technical insights, creative projects, and 
+                thoughts on the evolving landscape of software engineering and technology. Join me in exploring 
+                ideas that shape our digital future.
               </p>
             </div>
           </div>
@@ -81,11 +81,11 @@ const Index = () => {
                 <BookOpen size={24} className="text-beige-50" />
               </div>
               <h3 className="font-playfair text-2xl font-semibold text-bordeaux-900 mb-4">
-                Latest Thoughts
+                Latest Insights
               </h3>
               <p className="text-bordeaux-700 font-cormorant mb-6 leading-relaxed">
-                Discover my latest blog posts covering research insights, academic life, 
-                and reflections on contemporary issues.
+                Discover my latest blog posts covering software engineering insights, tech industry trends, 
+                and reflections on digital innovation.
               </p>
               <Link 
                 to="/blog" 
@@ -100,11 +100,11 @@ const Index = () => {
                 <Code size={24} className="text-beige-50" />
               </div>
               <h3 className="font-playfair text-2xl font-semibold text-bordeaux-900 mb-4">
-                Creative Projects
+                Technical Projects
               </h3>
               <p className="text-bordeaux-700 font-cormorant mb-6 leading-relaxed">
-                Explore my portfolio of digital projects, research tools, 
-                and creative endeavors that bridge technology and academia.
+                Explore my portfolio of software projects, technical tools, 
+                and innovative solutions that bridge technology and user experience.
               </p>
               <Link 
                 to="/projects" 
@@ -119,11 +119,11 @@ const Index = () => {
                 <GraduationCap size={24} className="text-beige-50" />
               </div>
               <h3 className="font-playfair text-2xl font-semibold text-bordeaux-900 mb-4">
-                Academic Work
+                Research & Writing
               </h3>
               <p className="text-bordeaux-700 font-cormorant mb-6 leading-relaxed">
-                Access my published research papers, conference presentations, 
-                and scholarly contributions to the academic community.
+                Access my technical publications, conference talks, 
+                and contributions to the software engineering community.
               </p>
               <Link 
                 to="/papers" 
@@ -134,7 +134,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

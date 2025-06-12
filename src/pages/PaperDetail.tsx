@@ -11,7 +11,7 @@ const paperDetails = {
     year: '2024',
     venue: 'Journal of Academic Innovation',
     type: 'Journal Article',
-    authors: ['Dr. Academic Scholar', 'Dr. Jane Researcher'],
+    authors: ['Nathan Storm', 'Dr. Jane Researcher'],
     abstract: 'This paper examines the impact of digital technologies on academic research methodologies and collaboration patterns across multiple disciplines. Through a comprehensive analysis of 500+ research projects, we identify key trends and challenges in the digital transformation of academia.',
     fullContent: `
       <h2>Introduction</h2>
@@ -39,7 +39,7 @@ const paperDetails = {
       <p>Digital transformation in academia is not merely a technological upgrade but a fundamental reimagining of how knowledge is created, validated, and shared. While challenges remain, the benefits of digital integration in research are substantial and will continue to drive innovation in academic practice.</p>
     `,
     doi: '10.1000/journal.2024.001',
-    citation: 'Scholar, A., & Researcher, J. (2024). Digital transformation in academic research: A comprehensive analysis. Journal of Academic Innovation, 15(2), 123-145. https://doi.org/10.1000/journal.2024.001',
+    citation: 'Storm, N., & Researcher, J. (2024). Digital transformation in academic research: A comprehensive analysis. Journal of Academic Innovation, 15(2), 123-145. https://doi.org/10.1000/journal.2024.001',
     pdfUrl: '/placeholder.pdf',
     externalUrl: 'https://example-journal.com/articles/digital-transformation'
   },
@@ -235,7 +235,7 @@ const PaperDetail = () => {
           )}
         </div>
 
-        <style jsx>{`
+        <style>{`
           .prose {
             font-family: 'Cormorant Garamond', serif;
             color: #581f27;

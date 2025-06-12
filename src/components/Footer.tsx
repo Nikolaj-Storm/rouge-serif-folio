@@ -11,20 +11,20 @@ export const Footer = () => {
               Get in Touch
             </h3>
             <p className="text-bordeaux-700 font-cormorant">
-              Connect with me for collaborations and discussions
+              Connect with me for collaborations and technical discussions
             </p>
           </div>
           
           <div className="flex space-x-6">
             <a 
-              href="mailto:contact@example.com" 
+              href="mailto:contact@nathanstorm.dev" 
               className="text-bordeaux-600 hover:text-bordeaux-900 transition-colors"
               aria-label="Email"
             >
               <Mail size={24} />
             </a>
             <a 
-              href="https://github.com" 
+              href="https://github.com/nstorm" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-bordeaux-600 hover:text-bordeaux-900 transition-colors"
@@ -33,7 +33,7 @@ export const Footer = () => {
               <Github size={24} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/nstorm/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-bordeaux-600 hover:text-bordeaux-900 transition-colors"
@@ -41,21 +41,12 @@ export const Footer = () => {
             >
               <Linkedin size={24} />
             </a>
-            <a 
-              href="https://twitter.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-bordeaux-600 hover:text-bordeaux-900 transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter size={24} />
-            </a>
           </div>
         </div>
         
         <div className="mt-8 pt-6 border-t border-beige-200 text-center">
           <p className="text-bordeaux-600 font-cormorant text-sm">
-            © 2024 Academic Portfolio. Crafted with care and attention to detail.
+            © 2024 Nathan Storm. Crafted with care and attention to detail.
           </p>
         </div>
       </div>
