@@ -161,7 +161,7 @@ const Projects = () => {
               Interested in Collaboration?
             </h2>
             <p className="text-bordeaux-700 font-cormorant mb-6 leading-relaxed">
-              Pessimists get to be right and optimists get to build the future. - I have the naive optimistic idea, that almost anything is doable, if your on the same page, feel free to reach out 🙌
+              Pessimists get to be right and optimists get to build the future. - I have the naive optimistic idea, that almost anything is doable, if you're on the same page, feel free to reach out 🙌
             </p>
             <a 
               href="mailto:contact@example.com"
