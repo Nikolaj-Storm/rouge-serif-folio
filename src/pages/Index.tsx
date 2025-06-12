@@ -22,11 +22,10 @@ const Index = () => {
         
         <div className={`text-center z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h1 className="font-playfair text-5xl md:text-7xl font-bold text-bordeaux-900 mb-6 leading-tight">
-            Nathan Storm
+            Nikolaj Storm
           </h1>
           <p className="font-cormorant text-xl md:text-2xl text-bordeaux-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Senior Software Engineer & Digital Innovation Expert exploring the intersection of 
-            technology and human experience
+            text
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link 
