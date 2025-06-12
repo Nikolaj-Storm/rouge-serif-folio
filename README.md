@@ -1,73 +1,92 @@
-# Welcome to your Lovable project
+
+# Academic Portfolio Website
+
+A refined, multipage personal academic portfolio website built with React, Vite, and Tailwind CSS.
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/ae1261ec-ded9-4d99-8073-92a6ffe75e60
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Modern, minimal design with beige and bordeaux color palette
+- Elegant serif typography throughout
+- Responsive design for all devices
+- Blog with Markdown support
+- Projects gallery with detailed views
+- Academic papers archive with APA citations
+- Smooth animations and transitions
 
-**Use Lovable**
+## Development
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ae1261ec-ded9-4d99-8073-92a6ffe75e60) and start prompting.
+### Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Local Development
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## GitHub Pages Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This project is configured to deploy automatically to GitHub Pages from the `/docs` folder.
 
-**Use GitHub Codespaces**
+### Automatic Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Push your changes to the `main` branch
+2. GitHub Actions will automatically build and deploy your site
+3. Go to your repository settings → Pages
+4. Set source to "Deploy from a branch"
+5. Select `main` branch and `/docs` folder
+6. Your site will be available at `https://[username].github.io/[repository-name]/`
 
-## What technologies are used for this project?
+### Manual Deployment
 
-This project is built with:
+```sh
+# Build for production
+npm run build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Or use the deployment script
+chmod +x scripts/deploy.sh
+./scripts/deploy.sh
+```
 
-## How can I deploy this project?
+### Important Notes
 
-Simply open [Lovable](https://lovable.dev/projects/ae1261ec-ded9-4d99-8073-92a6ffe75e60) and click on Share -> Publish.
+- Update the `base` path in `vite.config.ts` to match your repository name
+- Replace `[repository-name]` with your actual repository name
+- The site builds to the `/docs` folder for GitHub Pages compatibility
 
-## Can I connect a custom domain to my Lovable project?
+## Technologies Used
 
-Yes, you can!
+- **Frontend**: React 18, TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Routing**: React Router
+- **State Management**: TanStack Query
+- **Deployment**: GitHub Pages
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Project Structure
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```
+src/
+├── components/          # Reusable UI components
+├── pages/              # Page components
+├── lib/                # Utility functions
+└── hooks/              # Custom React hooks
+```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
