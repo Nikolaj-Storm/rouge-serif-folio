@@ -135,8 +135,10 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </div>
+     </section> {/* ✅ properly closing the section */}
+   </div>
   );
 };
+
 
 export default Index;
