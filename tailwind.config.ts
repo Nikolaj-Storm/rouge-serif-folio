@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,36 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				// Custom academic palette
+				beige: {
+					50: '#fdfcf8',
+					100: '#faf7f0',
+					200: '#f5f0e4',
+					300: '#ede4d3',
+					400: '#e3d5be',
+					500: '#d6c3a3',
+					600: '#c4a882',
+					700: '#a68a5f',
+					800: '#8a7049',
+					900: '#725c3a'
+				},
+				bordeaux: {
+					50: '#fdf2f4',
+					100: '#fce7ea',
+					200: '#f9d0d7',
+					300: '#f4a8b6',
+					400: '#ec7490',
+					500: '#e0476f',
+					600: '#cc2d56',
+					700: '#ac1f44',
+					800: '#8f1c3d',
+					900: '#581f27'
 				}
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'baskerville': ['Libre Baskerville', 'serif'],
+				'cormorant': ['Cormorant Garamond', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -69,26 +90,50 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			keyframes: {
-				'accordion-down': {
-					from: {
-						height: '0'
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
 					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
 					}
 				},
-				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px)'
 					},
-					to: {
-						height: '0'
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'scale-in': {
+					'0%': {
+						transform: 'scale(0.95)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
 					}
 				}
 			},
 			animation: {
-				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'fade-in': 'fade-in 0.6s ease-out',
+				'fade-in-up': 'fade-in-up 0.8s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'scale-in': 'scale-in 0.5s ease-out'
 			}
 		}
 	},
