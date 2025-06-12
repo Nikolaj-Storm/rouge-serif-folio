@@ -21,7 +21,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   // GitHub Pages configuration
-  base: mode === 'production' ? '/[repository-name]/' : '/',
+  base: mode === 'production' ? '/rouge-serif-folio/' : '/',
   build: {
     outDir: 'docs',
     emptyOutDir: true,
