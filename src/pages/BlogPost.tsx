@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, Tag, ArrowLeft } from 'lucide-react';
 
@@ -110,7 +109,7 @@ const BlogPost = () => {
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
-        <style jsx>{`
+        <style>{`
           .prose {
             font-family: 'Cormorant Garamond', serif;
             color: #581f27;

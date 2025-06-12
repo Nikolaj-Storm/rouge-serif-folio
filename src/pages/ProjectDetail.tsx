@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Github, ExternalLink, Calendar, Tag } from 'lucide-react';
 
@@ -164,7 +163,7 @@ const ProjectDetail = () => {
           dangerouslySetInnerHTML={{ __html: project.fullDescription }}
         />
 
-        <style jsx>{`
+        <style>{`
           .prose {
             font-family: 'Cormorant Garamond', serif;
             color: #581f27;
