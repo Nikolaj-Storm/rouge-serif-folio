@@ -5,7 +5,6 @@ A refined, multipage personal academic portfolio website built with React, Vite,
 
 ## Project info
 
-
 **URL**: https://lovable.dev/projects/ae1261ec-ded9-4d99-8073-92a6ffe75e60
 
 ## Features
