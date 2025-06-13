@@ -78,6 +78,83 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Citation Copy Functionality
+    const copyButtons = document.querySelectorAll('.copy-citation');
+    copyButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const citation = this.getAttribute('data-citation');
+            
+            // Use the modern clipboard API if available
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(citation).then(() => {
+                    showCitationCopiedNotification();
+                }).catch(err => {
+                    console.error('Failed to copy citation: ', err);
+                    fallbackCopyTextToClipboard(citation);
+                });
+            } else {
+                // Fallback for older browsers or non-secure contexts
+                fallbackCopyTextToClipboard(citation);
+            }
+        });
+    });
+
+    // Fallback copy function for older browsers
+    function fallbackCopyTextToClipboard(text) {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        
+        // Avoid scrolling to bottom
+        textArea.style.top = "0";
+        textArea.style.left = "0";
+        textArea.style.position = "fixed";
+
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+
+        try {
+            const successful = document.execCommand('copy');
+            if (successful) {
+                showCitationCopiedNotification();
+            } else {
+                console.error('Fallback: Could not copy text');
+            }
+        } catch (err) {
+            console.error('Fallback: Could not copy text: ', err);
+        }
+
+        document.body.removeChild(textArea);
+    }
+
+    // Show citation copied notification
+    function showCitationCopiedNotification() {
+        // Remove any existing notification
+        const existingNotification = document.querySelector('.citation-copied');
+        if (existingNotification) {
+            existingNotification.remove();
+        }
+
+        // Create and show new notification
+        const notification = document.createElement('div');
+        notification.className = 'citation-copied';
+        notification.textContent = 'Citation copied to clipboard!';
+        document.body.appendChild(notification);
+
+        // Show the notification
+        setTimeout(() => {
+            notification.classList.add('show');
+        }, 100);
+
+        // Hide and remove the notification after 3 seconds
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => {
+                notification.remove();
+            }, 300);
+        }, 3000);
+    }
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -125,4 +202,15 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
         observer.observe(card);
     });
+
+    // Smooth scroll indicator animation
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', function() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
