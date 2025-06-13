@@ -7,7 +7,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -16,12 +16,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
-      
+
       - name: Install dependencies
         run: npm install
 
-      
       - name: Build
         run: npm run build
 
@@ -29,5 +27,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Or ./docs if that's where your build goes
+          publish_dir: ./dist       # or ./docs if that’s where you build to
           publish_branch: gh-pages
