@@ -1,25 +1,106 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prolo</title>
-    <meta name="description" content="Personal Academic Portfolio" />
-    <meta name="author" content="Academic Professional" />
-    
-    <!-- Google Fonts - Serif fonts only -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Storm - Software Engineer & Entrepreneur</title>
+    <link rel="stylesheet" href="assets/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Nathan Storm</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="papers.html" class="nav-link">Papers</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-    <meta property="og:title" content="Academic Portfolio" />
-    <meta property="og:description" content="Personal Academic Portfolio" />
-    <meta property="og:type" content="website" />
-  </head>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Nathan Storm</h1>
+            <p class="hero-subtitle">Software Engineer & Entrepreneur</p>
+            <div class="hero-buttons">
+                <a href="papers.html" class="btn-primary">View Research</a>
+                <a href="projects.html" class="btn-secondary">Explore Projects</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="arrow-down"></div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>Welcome to My Digital Journey</h2>
+            <div class="about-content">
+                <p>I am a passionate software engineer dedicated to advancing technology through innovative solutions and rigorous engineering practices. My work spans web development, cloud architecture, and digital transformation, always seeking to bridge technical excellence with practical applications.</p>
+                <p>Through this digital space, I share my technical insights, creative projects, and thoughts on the evolving landscape of software engineering and technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3>Latest Insights</h3>
+                    <p>Discover my latest blog posts covering software engineering insights, tech industry trends, and reflections on digital innovation.</p>
+                    <a href="blog.html" class="feature-link">Read Blog →</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Technical Projects</h3>
+                    <p>Explore my portfolio of software projects, technical tools, and innovative solutions that bridge technology and user experience.</p>
+                    <a href="projects.html" class="feature-link">View Projects →</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Research & Writing</h3>
+                    <p>Access my technical publications, conference talks, and contributions to the software engineering community.</p>
+                    <a href="papers.html" class="feature-link">Browse Papers →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Get in Touch</h3>
+                    <p>Connect with me for collaborations and technical discussions</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:contact@nathanstorm.dev" class="footer-link">Email</a>
+                    <a href="https://github.com/nstorm" target="_blank" class="footer-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/nstorm/" target="_blank" class="footer-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nathan Storm. Crafted with care and attention to detail.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
 </html>

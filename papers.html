@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Publications - Nathan Storm</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Nathan Storm</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="papers.html" class="nav-link active">Papers</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Academic Publications</h1>
+            <p>A comprehensive collection of my research papers, publications, and scholarly contributions to the academic community.</p>
+        </div>
+    </section>
+
+    <!-- Papers List -->
+    <section class="papers">
+        <div class="container">
+            <div class="filter-section">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All Years</button>
+                    <button class="filter-btn" data-filter="2024">2024</button>
+                    <button class="filter-btn" data-filter="2023">2023</button>
+                    <button class="filter-btn" data-filter="2022">2022</button>
+                </div>
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All Types</button>
+                    <button class="filter-btn" data-filter="journal">Journal Article</button>
+                    <button class="filter-btn" data-filter="conference">Conference Paper</button>
+                </div>
+            </div>
+
+            <div class="papers-list">
+                <article class="paper-card" data-year="2024" data-type="journal">
+                    <div class="paper-content">
+                        <div class="paper-header">
+                            <h2>Digital Transformation in Academic Research: A Comprehensive Analysis</h2>
+                            <span class="paper-type">Journal Article</span>
+                        </div>
+                        <div class="paper-meta">
+                            <span class="paper-year">2024</span>
+                            <span class="paper-venue">Journal of Academic Innovation</span>
+                        </div>
+                        <p class="paper-authors">Nathan Storm, Dr. Jane Researcher</p>
+                        <p class="paper-abstract">This paper examines the impact of digital technologies on academic research methodologies and collaboration patterns across multiple disciplines.</p>
+                        <div class="paper-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <a href="#" class="btn-secondary">DOI</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper-card" data-year="2023" data-type="conference">
+                    <div class="paper-content">
+                        <div class="paper-header">
+                            <h2>Mapping Interdisciplinary Research Networks</h2>
+                            <span class="paper-type">Conference Paper</span>
+                        </div>
+                        <div class="paper-meta">
+                            <span class="paper-year">2023</span>
+                            <span class="paper-venue">International Conference on Research Methods</span>
+                        </div>
+                        <p class="paper-authors">Nathan Storm, Prof. Research Leader, Dr. Network Analyst</p>
+                        <p class="paper-abstract">We present a novel approach to mapping and analyzing interdisciplinary research networks using advanced network analysis techniques.</p>
+                        <div class="paper-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <a href="#" class="btn-secondary">DOI</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper-card" data-year="2023" data-type="journal">
+                    <div class="paper-content">
+                        <div class="paper-header">
+                            <h2>Open Science and Reproducibility in the Digital Age</h2>
+                            <span class="paper-type">Review Article</span>
+                        </div>
+                        <div class="paper-meta">
+                            <span class="paper-year">2023</span>
+                            <span class="paper-venue">Science Policy Review</span>
+                        </div>
+                        <p class="paper-authors">Nathan Storm</p>
+                        <p class="paper-abstract">This review article explores the current state of open science practices and their impact on research reproducibility.</p>
+                        <div class="paper-actions">
+                            <a href="#" class="btn-primary">View Details</a>
+                            <a href="#" class="btn-secondary">DOI</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-section">
+                <h2>Publication Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Total Publications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Journal Articles</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Conference Papers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Get in Touch</h3>
+                    <p>Connect with me for collaborations and technical discussions</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:contact@nathanstorm.dev" class="footer-link">Email</a>
+                    <a href="https://github.com/nstorm" target="_blank" class="footer-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/nstorm/" target="_blank" class="footer-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nathan Storm. Crafted with care and attention to detail.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
