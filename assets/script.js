@@ -1,4 +1,3 @@
-
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');
@@ -17,30 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-
-    // Blog Filter Functionality
-    const tagButtons = document.querySelectorAll('.tag-btn');
-    const postCards = document.querySelectorAll('.post-card');
-
-    tagButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const selectedTag = this.getAttribute('data-tag');
-            
-            // Update active button
-            tagButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-
-            // Filter posts
-            postCards.forEach(card => {
-                const cardTags = card.getAttribute('data-tags') || '';
-                if (selectedTag === 'all' || cardTags.includes(selectedTag)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-    });
 
     // Papers Filter Functionality
     const filterButtons = document.querySelectorAll('.filter-btn');
